@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Chess Game</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/chessboard-1.0.0.css">
+</head>
+<body>
+    <div id="lobby">
+        <h1>Chess Lobby</h1>
+        <input type="text" id="username" placeholder="Enter your username">
+        <select id="colorSelect">
+            <option value="white">White</option>
+            <option value="black">Black</option>
+        </select>
+        <button id="createGame">Create Game</button>
+        <div id="gamesList"></div>
+    </div>
+    <div id="game" style="display: none;">
+        <label>Status:</label>
+        <div id="status"></div>
+        <label>PGN:</label>
+        <div id="pgn"></div>
+        <div id="board" style="width: 400px"></div>
+        <button id="leaveGame">Leave Game</button>
+    </div>
+    <script src="js/jquery.min.js"></script>
+    <script type="module" src="js/chess.min.js"></script>
+    <script src="js/chessboard.min.js"></script>
+    <script src="socket.io/socket.io.js"></script>
+    <script type="module" src="js/script.js"></script>
+</body>
+</html>
