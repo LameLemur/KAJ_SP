@@ -1,5 +1,4 @@
-# KAJ_SP
-KAJ semestralni prace
+# KAJ_Semestralni Prace
 
 To run on locally just run
 ```
